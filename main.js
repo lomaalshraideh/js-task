@@ -20572,44 +20572,44 @@
 //median = sum of the numbers / 2
 
 
-let sumNum=function (a,b,c,d,e,f){
-return a+b+c+d+e+f ;
-}
-let x=sumNum(1,2,3,4,5,6);
-console.log(x)
+// let sumNum=function (a,b,c,d,e,f){
+// return a+b+c+d+e+f ;
+// }
+// let x=sumNum(1,2,3,4,5,6);
+// console.log(x)
 
-let medNum=function(p){
-    return p/2;
-}
-let g=medNum(x);
-console.log(g);
+// let medNum=function(p){
+//     return p/2;
+// }
+// let g=medNum(x);
+// console.log(g);
 //-------------------------------------------------------------
 //Write a function that returns the first number -
 // the second number and then pass the returned value to a 
 //function that returns  passed value /2
 
-let Nums=function (a,b){
-    return a-b;
-}
-let o=Nums(1,2);
-console.log(o);
-let divitNums=function(x){
- return o/2;
-}
-let y=divitNums(x) ;
+// let Nums=function (a,b){
+//     return a-b;
+// }
+// let o=Nums(1,2);
+// console.log(o);
+// let divitNums=function(x){
+//  return o/2;
+// }
+// let y=divitNums(x) ;
 
-console.log(y);
+// console.log(y);
 //-------------------------------------------------------------
 //Write a function named calcAge that receives a parameter
 // named person, person will be an object that has name and
 // yearOfBirth  keys, and then it returns the age of that person
 //age = 2023 - birthyear of a human
 
-let calcAge=function(person){
-    return  2023-person.yearOfBirth;
-}
+// let calcAge=function(person){
+//     return  2023-person.yearOfBirth;
+// }
 
- console.log(calcAge({name:"loma",yearOfBirth:1999}))
+//  console.log(calcAge({name:"loma",yearOfBirth:1999}))
 //---------------------------------------------------------------
 //1- Create a function that receives an array of 5 elements, and returns an
 // array of the even values in the inserted array
@@ -20617,35 +20617,35 @@ let calcAge=function(person){
 //Example [13,16,100,5022]=> outcome [16,100,5022]
 
 
-const num=[1,22,5,6,7]
-let text=[];
-for( let i=0; i<num.length; i++){
-    if(num[i] %2===0){
-     text+= num[i] ;   }
- }
-console.log(text);// The apparent result is correct, but without a array
-//-----------------------------------------------------
+// const num=[1,22,5,6,7]
+// let text=[];
+// for( let i=0; i<num.length; i++){
+//     if(num[i] %2===0){
+//      text+= num[i] ;   }
+//  }
+// console.log(text);// The apparent result is correct, but without a array
+// //-----------------------------------------------------
 
-let array = [10,6,7,3,88];
-let evenNumber = [];
-for (let i = 0; i < array.length; i++) {
-  if (array[i] % 2 === 0) {
-    evenNumber.push(array[i]);
-  }
-}
-console.log(evenNumber);//solve without function
-//----------------------------------------------------------
+// let array = [10,6,7,3,88];
+// let evenNumber = [];
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] % 2 === 0) {
+//     evenNumber.push(array[i]);
+//   }
+// }
+// console.log(evenNumber);//solve without function
+// //----------------------------------------------------------
 
-let evenNumbers =function(array){
-let even = [];
-for (let i = 0; i < array.length; i++) {
-  if (array[i] % 2 === 0) {
-    even.push(array[i]);
-  }
-}
-return even;
-}
-console.log(evenNumbers([10,66,7,15,4]))
+// let evenNumbers =function(array){
+// let even = [];
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] % 2 === 0) {
+//     even.push(array[i]);
+//   }
+// }
+// return even;
+// }
+// console.log(evenNumbers([10,66,7,15,4]))
 
 
 //-----------------------------------------------------------------
@@ -20658,29 +20658,29 @@ console.log(evenNumbers([10,66,7,15,4]))
 //"nadeen"
 
 //solve with for 
-const Name=["loma","mohammed","leen","hala"]; 
-for (let i = 0; i < Name.length; i++) {
-    console.log(Name[i]);
-  }
+// const Name=["loma","mohammed","leen","hala"]; 
+// for (let i = 0; i < Name.length; i++) {
+//     console.log(Name[i]);
+//   }
 
-  // Solve by for of but console is not working
-  const Names=["loma","mohammed","leen","hala"]; 
-let test="";
-for(let x of Names){
-    test += x + "<br>";
-}
-console.log(test);
-document.getElementById("demo").innerHTML = test;
+//   // Solve by for of but console is not working
+//   const Names=["loma","mohammed","leen","hala"]; 
+// let test="";
+// for(let x of Names){
+//     test += x + "<br>";
+// }
+// console.log(test);
+// document.getElementById("demo").innerHTML = test;
 
-//solve with forEach method but console is not working
-const numbers = ["loma","mohammed","leen","hala"];
-let txt = "";
-numbers.forEach(myFunction);
-function myFunction(value) {
-  txt += value + "<br>"; 
-}
-console.log(txt);
-document.getElementById("test").innerHTML = txt;
+// //solve with forEach method but console is not working
+// const numbers = ["loma","mohammed","leen","hala"];
+// let txt = "";
+// numbers.forEach(myFunction);
+// function myFunction(value) {
+//   txt += value + "<br>"; 
+// }
+// console.log(txt);
+// document.getElementById("test").innerHTML = txt;
 
 
 //-----------------------------------------------------------------
@@ -20699,24 +20699,24 @@ document.getElementById("test").innerHTML = txt;
 //4- "daughter" it will print "Hey angel" to the console
 
 
-function obj(value) {
-    switch (value.relation) {
-      case "mother":
-        console.log("Hey Ma'am");
-        break;
-      case "father":
-        console.log("Hello sir");
-        break;
-      case "son":
-        console.log("Hey kiddy");
-        break;
-      case "daughter":
-        console.log("Hey angel");
-        break;
-      default:
-        console.log("Invalid relation");
-    }
-  }
+// function obj(value) {
+//     switch (value.relation) {
+//       case "mother":
+//         console.log("Hey Ma'am");
+//         break;
+//       case "father":
+//         console.log("Hello sir");
+//         break;
+//       case "son":
+//         console.log("Hey kiddy");
+//         break;
+//       case "daughter":
+//         console.log("Hey angel");
+//         break;
+//       default:
+//         console.log("Invalid relation");
+//     }
+//   }
   //console.log()
  
 
@@ -20740,51 +20740,56 @@ function obj(value) {
 // console.log(tenValue(7));//output [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
 //--------------------------------------------------------------------
 
-function pluseOne (Nums){
-    let arrays=[];
-    for(let i=0;i<=10;i++){
-        arrays.push(Nums+i) // Add the i because each time it will add one to the for
-    }
-    return arrays
-}
-console.log(pluseOne(5));
-console.log(pluseOne(15));
+// function pluseOne (Nums){
+//     let arrays=[];
+//     for(let i=0;i<=10;i++){
+//         arrays.push(Nums+i) // Add the i because each time it will add one to the for
+//     }
+//     return arrays
+// }
+// console.log(pluseOne(5));
+// console.log(pluseOne(15));
 //---------------------------------------------------------------------
 //5-Write a function that returns an array of countries that has population over 10 millions
 
-let  found=count.filter((item)=>item.population >=10000000)
-console.log(found)
+// let  found=count.filter((item)=>item.population >=10000000)
+// console.log(found)
 
 //-------------------------------------------------------------------
 //6-Write a function that returns an array of names of countries
 
-let theCountryName=count.map((item)=>item.name)
-console.log(theCountryName)
+// let theCountryName=count.map((item)=>item.name)
+// console.log(theCountryName)
 
 //----------------------------------------------------------------------
 // 7-Write a function that returns the first element that has a population 
 //over 5 millions
 
-let firstElement=count.find((item)=>item.population)
-console.log(firstElement)
+// let firstElement=count.find((item)=>item.population)
+// console.log(firstElement)
 
 //----------------------------------------------------------------------
-//Write a function that returns an array of the borders of jordan country_
+//8-Write a function that returns an array of the borders of jordan country_
 
-let getBorder=count.find((item)=>item.alpha2Code === "JO").borders
-console.log(getBorder)
+// let getBorder=count.find((item)=>item.alpha2Code === "JO").borders
+// console.log(getBorder)
 
 //----------------------------------------------------------------------
-//Write a function that returns an array of  all the currencies name
+//9-Write a function that returns an array of  all the currencies name
 
 let currenciesname=[];
-for (let i=0;i<count.length;i++){
-count.forEach((item)=>item.currencies)
-for(let x=0;x<currencies.lenght;x++){
-  currencies.forEach((country)=>country.currencies.name)
-currenciesname.push(currencies.name)
-}
-}
+for(let i=0;i<=count.length;i++){
+  count.forEach(country=>country.currencies)
+ 
+}currencies.forEach(function (obj){
+  console.log(obj.name);
+})
+// for(let x=0;x<=country.currencies.length;x++){
+//   currencies.filter(function(el){
+//     return el.name;
+//   })
+// }
+currenciesname.push(currencies.Name)
 console.log(currenciesname)
 
 
